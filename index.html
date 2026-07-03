@@ -57,11 +57,18 @@ body{margin:0;background:#fff;color:#1a1a1a;font:16px/1.55 -apple-system,system-
 .cform button:hover{background:#a32218;}
 footer{margin-top:50px;border-top:1px solid #dcdad4;padding-top:14px;color:#999;font-size:12px;}
 @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:700px){
+.nav{flex-direction:column;align-items:flex-start;gap:10px;padding:18px 0 12px;}
+.nav nav{gap:0;width:100%;justify-content:space-between;}
+.nav a{font-size:11.5px;letter-spacing:.05em;}
+.chips{gap:2px 0;justify-content:space-between;}
+.chip{font-size:12.5px;padding:4px 0;}
+}
 @media(max-width:600px){.grid{grid-template-columns:1fr;}.wrap{padding:0 18px 40px;}}
 </style></head><body>
 <div class="wrap">
 <div class="nav"><a class="brand" href="index.html">TED ALCORN</a><nav><a class=on href="index.html">Journalism</a><a href="data.html">Data</a><a href="teaching.html">Teaching</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></div>
-<div class="chips" role="group" aria-label="Filter by topic"><button class="chip active" data-filter="Featured">Featured</button><button class="chip" data-filter="Justice">Justice</button><button class="chip" data-filter="Global">Global</button><button class="chip" data-filter="Health">Health</button><button class="chip" data-filter="Alcohol">Alcohol</button><button class="chip" data-filter="New_York">New York</button><button class="chip" data-filter="Business">Business</button></div><div class="grid"><article class="card" data-tags="Featured Justice">
+<div class="chips" role="group" aria-label="Filter by topic"><button class="chip active" data-filter="Featured">Featured</button><button class="chip" data-filter="Justice">Justice</button><button class="chip" data-filter="Global">Global</button><button class="chip" data-filter="Health">Health</button><button class="chip" data-filter="Alcohol">Alcohol</button><button class="chip" data-filter="NYC">NYC</button></div><div class="grid"><article class="card" data-tags="Featured Justice">
 <a class="cardlink" href="https://www.nytimes.com/2026/03/13/health/medicaid-jail-prison-healh-care.html" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/nyt_00HS-jail-medicaid-jhvl-promo.jpg" alt="" loading="lazy"><span class="ol"><img class="wm wm-white" style="height:17px" src="assets/logos/The_New_York_Times.svg" alt="The New York Times" loading="lazy"></span></div>
 <div class="meta meta-slim"><span class="yr">Mar 2026</span></div>
@@ -82,7 +89,7 @@ footer{margin-top:50px;border-top:1px solid #dcdad4;padding-top:14px;color:#999;
 <h3 class="hed">Punitive damages emerge as flashpoint in latest malpractice reform push</h3>
 <p class="dek">Responding to doctors&#x27; concerns that New Mexico&#x27;s malpractice system is making it hard to practice medicine, leading lawmakers hope to rein in tactics lawyers use to win awards for injured patients.</p>
 </a>
-</article><article class="card" data-tags="Justice New_York">
+</article><article class="card" data-tags="Justice NYC">
 <a class="cardlink" href="https://www.thecity.nyc/2025/11/12/new-yorkers-concealed-carry-gun-classes/" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/new-yorkers-fill-gun-classes-as-concealed-carry-applications.jpg" alt="" loading="lazy"><span class="ol"><span class="wm-type" style="font-weight:800;letter-spacing:.14em;color:#fff;">THE CITY</span></span></div>
 <div class="meta meta-slim"><span class="yr">Nov 2025</span></div>
@@ -131,7 +138,7 @@ footer{margin-top:50px;border-top:1px solid #dcdad4;padding-top:14px;color:#999;
 <h3 class="hed">How Florida&#x27;s Attempt to Let Teens Sleep Longer Fell Apart</h3>
 <p class="dek">After lawmakers required high schools to start no earlier than 8:30 a.m., school administrators complained that it was unworkable. Last month, Gov. Ron DeSantis signed a repeal.</p>
 </a>
-</article><article class="card" data-tags="Justice New_York">
+</article><article class="card" data-tags="Justice NYC">
 <a class="cardlink" href="https://www.thecity.nyc/2025/04/10/courts-criminal-cases-rikers-island/" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/how-sluggish-courts-help-keep-rikers-jails-full.jpg" alt="" loading="lazy"><span class="ol"><span class="wm-type" style="font-weight:800;letter-spacing:.14em;color:#fff;">THE CITY</span></span></div>
 <div class="meta meta-slim"><span class="yr">Apr 2025</span></div>
@@ -264,7 +271,7 @@ footer{margin-top:50px;border-top:1px solid #dcdad4;padding-top:14px;color:#999;
 <h3 class="hed">Rise in Deaths Spurs Effort to Raise Alcohol Taxes</h3>
 <p class="dek">Alcohol taxes have been stagnant for years. But after the pandemic sent alcohol-related deaths soaring, activists in Oregon said higher taxes could save lives.</p>
 </a>
-</article><article class="card" data-tags="Featured New_York">
+</article><article class="card" data-tags="Featured NYC">
 <a class="cardlink" href="https://www.nytimes.com/2022/09/23/nyregion/35-mm-film-projectionists.html" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/why-new-yorkers-still-film.jpg" alt="" loading="lazy"><span class="ol"><img class="wm wm-white" style="height:17px" src="assets/logos/The_New_York_Times.svg" alt="The New York Times" loading="lazy"></span></div>
 <div class="meta meta-slim"><span class="yr">Sep 2022</span></div>
@@ -306,7 +313,7 @@ footer{margin-top:50px;border-top:1px solid #dcdad4;padding-top:14px;color:#999;
 <h3 class="hed">Skeleton Crew</h3>
 <p class="dek">Santa Fe&#x27;s once-vaunted diversion program for people with addictions has dwindled to nearly nothing</p>
 </a>
-</article><article class="card" data-tags="Justice New_York">
+</article><article class="card" data-tags="Justice NYC">
 <a class="cardlink" href="https://www.nytimes.com/2021/11/12/nyregion/rikers-older-prisoners.html" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/on-rikers-island-a-doctor-who-tends-to-the-oldest-and-sickes.jpg" alt="" loading="lazy"><span class="ol"><img class="wm wm-white" style="height:17px" src="assets/logos/The_New_York_Times.svg" alt="The New York Times" loading="lazy"></span></div>
 <div class="meta meta-slim"><span class="yr">Nov 2021</span></div>
@@ -327,28 +334,28 @@ footer{margin-top:50px;border-top:1px solid #dcdad4;padding-top:14px;color:#999;
 <h3 class="hed">The Judge Who Keeps People Out of Jail</h3>
 <p class="dek">In northern New Mexico, a district court judge has a radical approach to addressing addiction</p>
 </a>
-</article><article class="card" data-tags="Featured Health New_York">
+</article><article class="card" data-tags="Featured Health NYC">
 <a class="cardlink" href="https://www.nytimes.com/2021/06/04/health/nursing-shortage-disabled-children.html" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/to-keep-their-son-alive-they-sleep-in-shifts-and-hope-a-nurs.jpg" alt="" loading="lazy"><span class="ol"><img class="wm wm-white" style="height:17px" src="assets/logos/The_New_York_Times.svg" alt="The New York Times" loading="lazy"></span></div>
 <div class="meta meta-slim"><span class="yr">Jun 2021</span></div>
 <h3 class="hed">To Keep Their Son Alive, They Sleep in Shifts. And Hope a Nurse Shows Up.</h3>
 <p class="dek">A nursing shortage &#x27; driven by the pandemic &#x27; has made life miserable for parents with profoundly disabled children. &#x27;What if I&#x27;m so exhausted that I make a mistake?&#x27;</p>
 </a>
-</article><article class="card" data-tags="Justice New_York">
+</article><article class="card" data-tags="Justice NYC">
 <a class="cardlink" href="https://www.nytimes.com/2021/05/13/nyregion/criminal-justice-reform-nyc.html" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/reimagining-the-justice-system-from-inside-the-mayor-s-offic.jpg" alt="" loading="lazy"><span class="ol"><img class="wm wm-white" style="height:17px" src="assets/logos/The_New_York_Times.svg" alt="The New York Times" loading="lazy"></span></div>
 <div class="meta meta-slim"><span class="yr">May 2021</span></div>
 <h3 class="hed">Reimagining the Justice System, From Inside the Mayor&#x27;s Office</h3>
 <p class="dek">Eric Cumberbatch has been on a mission to curb violence through community outreach.</p>
 </a>
-</article><article class="card" data-tags="Business">
+</article><article class="card" data-tags="Global">
 <a class="cardlink" href="https://www.wsj.com/articles/the-hot-debate-over-solar-geoengineering-and-its-impact-on-climate-11620932402" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/the-hot-debate-over-solar-geoengineering-and-its-impact-on-c.jpg" alt="" loading="lazy"><span class="ol"><img class="wm wm-white" style="height:15px" src="assets/logos/The_Wall_Street_Journal_Logo.svg" alt="The Wall Street Journal" loading="lazy"></span></div>
 <div class="meta meta-slim"><span class="yr">May 2021</span></div>
 <h3 class="hed">The Hot Debate Over Solar Geoengineering and Its Impact on Climate</h3>
 <p class="dek">In addition to cutting carbon emissions, is it time to study methods for altering the atmosphere? Three experts square off.</p>
 </a>
-</article><article class="card" data-tags="Business">
+</article><article class="card" data-tags="Global">
 <a class="cardlink" href="https://www.wsj.com/articles/how-ai-can-make-weather-forecasting-less-cloudy-11617566400" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/how-ai-can-make-weather-forecasting-less-cloudy.jpg" alt="" loading="lazy"><span class="ol"><img class="wm wm-white" style="height:15px" src="assets/logos/The_Wall_Street_Journal_Logo.svg" alt="The Wall Street Journal" loading="lazy"></span></div>
 <div class="meta meta-slim"><span class="yr">Apr 2021</span></div>
@@ -383,28 +390,28 @@ footer{margin-top:50px;border-top:1px solid #dcdad4;padding-top:14px;color:#999;
 <h3 class="hed">Albuquerque&#x27;s vision for non-police first responders comes down to earth</h3>
 <p class="dek">Printed in white block letters, the question stretched across billboards around Albuquerque last summer. And it still haunts the mother of two, Elaine Maestas, who helped pay to put them up. &#x27;What if emergency responders</p>
 </a>
-</article><article class="card" data-tags="Featured New_York">
+</article><article class="card" data-tags="Featured NYC">
 <a class="cardlink" href="https://www.nytimes.com/2021/01/01/nyregion/coronavirus-hospital-chaplain-buddhism.html" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/how-a-zen-buddhist-monk-and-hospital-chaplain-spends-his-sun.jpg" alt="" loading="lazy"><span class="ol"><img class="wm wm-white" style="height:17px" src="assets/logos/The_New_York_Times.svg" alt="The New York Times" loading="lazy"></span></div>
 <div class="meta meta-slim"><span class="yr">Jan 2021</span></div>
 <h3 class="hed">How a Zen Buddhist Monk and Hospital Chaplain Spends His Sundays</h3>
 <p class="dek">To care for Covid-19 patients and their families, Seigan Ed Glassing reserves one day of the week to care for himself.</p>
 </a>
-</article><article class="card" data-tags="Business">
+</article><article class="card" data-tags="Global">
 <a class="cardlink" href="https://www.wsj.com/articles/how-ai-can-help-save-forests-11604430000" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/how-ai-can-help-save-forests.jpg" alt="" loading="lazy"><span class="ol"><img class="wm wm-white" style="height:15px" src="assets/logos/The_Wall_Street_Journal_Logo.svg" alt="The Wall Street Journal" loading="lazy"></span></div>
 <div class="meta meta-slim"><span class="yr">Nov 2020</span></div>
 <h3 class="hed">How AI Can Help Save Forests</h3>
 <p class="dek">Satellite imagery and artificial intelligence give new hope to those fighting pests, wildfires and deforestation</p>
 </a>
-</article><article class="card" data-tags="New_York">
+</article><article class="card" data-tags="NYC">
 <a class="cardlink" href="https://www.nytimes.com/2020/09/17/nyregion/coronavirus-nyc-yoga-studios.html" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/is-this-the-end-of-the-new-york-yoga-studio.jpg" alt="" loading="lazy"><span class="ol"><img class="wm wm-white" style="height:17px" src="assets/logos/The_New_York_Times.svg" alt="The New York Times" loading="lazy"></span></div>
 <div class="meta meta-slim"><span class="yr">Sep 2020</span></div>
 <h3 class="hed">Is This the End of the New York Yoga Studio?</h3>
 <p class="dek">Soaring rents, the pandemic and the rise of the Instagram yogi could mean the demise of the urban wellness oasis.</p>
 </a>
-</article><article class="card" data-tags="Featured New_York">
+</article><article class="card" data-tags="Featured NYC">
 <a class="cardlink" href="https://www.nytimes.com/2020/08/29/nyregion/waacking-nyc-club-dance.html" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/waacking-s-trip-from-soul-train-to-instagram.jpg" alt="" loading="lazy"><span class="ol"><img class="wm wm-white" style="height:17px" src="assets/logos/The_New_York_Times.svg" alt="The New York Times" loading="lazy"></span></div>
 <div class="meta meta-slim"><span class="yr">Aug 2020</span></div>
@@ -432,14 +439,14 @@ footer{margin-top:50px;border-top:1px solid #dcdad4;padding-top:14px;color:#999;
 <h3 class="hed">The bumpy road to police abolition</h3>
 <p class="dek">Protesters and activists have categorically changed the national conversation about public safety. Now they have to figure out how to change public policy.</p>
 </a>
-</article><article class="card" data-tags="New_York">
+</article><article class="card" data-tags="NYC">
 <a class="cardlink" href="https://www.nytimes.com/2020/04/10/nyregion/coronavirus-Mario-Powell-Jesuit-Priest.html" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/how-a-jesuit-priest-in-quarantine-spends-his-sundays.jpg" alt="" loading="lazy"><span class="ol"><img class="wm wm-white" style="height:17px" src="assets/logos/The_New_York_Times.svg" alt="The New York Times" loading="lazy"></span></div>
 <div class="meta meta-slim"><span class="yr">Apr 2020</span></div>
 <h3 class="hed">How a Jesuit Priest in Quarantine Spends His Sundays</h3>
 <p class="dek">The Rev. Mario Powell lives in a community with eight other priests. But since one tested positive for the coronavirus, his life has become more isolated.</p>
 </a>
-</article><article class="card" data-tags="New_York Business">
+</article><article class="card" data-tags="NYC Business">
 <a class="cardlink" href="https://www.wsj.com/articles/the-apollos-next-act-expansion-11585328519" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/the-apollo-s-next-act-expansion.jpg" alt="" loading="lazy"><span class="ol"><img class="wm wm-white" style="height:15px" src="assets/logos/The_Wall_Street_Journal_Logo.svg" alt="The Wall Street Journal" loading="lazy"></span></div>
 <div class="meta meta-slim"><span class="yr">Mar 2020</span></div>
@@ -453,7 +460,7 @@ footer{margin-top:50px;border-top:1px solid #dcdad4;padding-top:14px;color:#999;
 <h3 class="hed">As bail reform takes hold across New York State, a rural county wrestles with the future of its aging jail</h3>
 <p class="dek">The debate around bail reform in New York focused predominantly on New York City&#x27;s Rikers Island, but the bigger impact may be upstate, where almost two-thirds of New York&#x27;s jail capacity is located.</p>
 </a>
-</article><article class="card" data-tags="Featured New_York">
+</article><article class="card" data-tags="Featured NYC">
 <a class="cardlink" href="https://www.nytimes.com/2020/01/10/nyregion/jule-hall-college-behind-bars-pbs.html" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/how-jule-hall-graduate-of-the-bard-prison-initiative-spends.jpg" alt="" loading="lazy"><span class="ol"><img class="wm wm-white" style="height:17px" src="assets/logos/The_New_York_Times.svg" alt="The New York Times" loading="lazy"></span></div>
 <div class="meta meta-slim"><span class="yr">Jan 2020</span></div>
@@ -502,14 +509,14 @@ footer{margin-top:50px;border-top:1px solid #dcdad4;padding-top:14px;color:#999;
 <h3 class="hed">The Battle Over Police Accountability</h3>
 <p class="dek">When a Nashville officer killed a black man, his mother and other activists didn&#x27;t just seek an indictment&#x27;they fought to give citizens oversight of the whole police department.</p>
 </a>
-</article><article class="card" data-tags="Justice New_York">
+</article><article class="card" data-tags="Justice NYC">
 <a class="cardlink" href="https://www.nytimes.com/2019/07/19/nyregion/michael-mcmahon-staten-island-district-attorney.html" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/where-law-and-order-justice-still-reigns-in-new-york-city.jpg" alt="" loading="lazy"><span class="ol"><img class="wm wm-white" style="height:17px" src="assets/logos/The_New_York_Times.svg" alt="The New York Times" loading="lazy"></span></div>
 <div class="meta meta-slim"><span class="yr">Jul 2019</span></div>
 <h3 class="hed">Where Law-and-Order Justice Still Reigns in New York City</h3>
 <p class="dek">The district attorney of Staten Island is a Democrat, but don&#x27;t expect him to jump on the progressive wave of criminal justice reforms.</p>
 </a>
-</article><article class="card" data-tags="Justice New_York">
+</article><article class="card" data-tags="Justice NYC">
 <a class="cardlink" href="https://www.nytimes.com/2019/05/08/nyregion/suspending-licenses-minor-offense-money.html" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/handcuffed-and-arrested-for-not-paying-a-traffic-ticket.jpg" alt="" loading="lazy"><span class="ol"><img class="wm wm-white" style="height:17px" src="assets/logos/The_New_York_Times.svg" alt="The New York Times" loading="lazy"></span></div>
 <div class="meta meta-slim"><span class="yr">May 2019</span></div>
@@ -523,7 +530,7 @@ footer{margin-top:50px;border-top:1px solid #dcdad4;padding-top:14px;color:#999;
 <h3 class="hed">An Ignored Epidemic in New Mexico&#x27;s Prisons</h3>
 <p class="dek">The treatment was simple &#x27; three pills a day, best taken on a full stomach &#x27; and it cured Gabriel Serna of hepatitis C in eight weeks. He just had to wait eight years to get it.</p>
 </a>
-</article><article class="card" data-tags="Featured Justice New_York">
+</article><article class="card" data-tags="Featured Justice NYC">
 <a class="cardlink" href="https://www.nytimes.com/2019/02/01/nyregion/rikers-supervised-release-bail.html" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/jail-or-bail-there-s-a-new-option.jpg" alt="" loading="lazy"><span class="ol"><img class="wm wm-white" style="height:17px" src="assets/logos/The_New_York_Times.svg" alt="The New York Times" loading="lazy"></span></div>
 <div class="meta meta-slim"><span class="yr">Feb 2019</span></div>
@@ -544,14 +551,14 @@ footer{margin-top:50px;border-top:1px solid #dcdad4;padding-top:14px;color:#999;
 <h3 class="hed">The Fight to Save Independent Health Care in the Age of Medical Monopolies</h3>
 <p class="dek">The country&#x27;s top doctor has picked a fight with what she calls the &#x27;medical industrial complex&#x27;. She might win the battle, but can she win the war?</p>
 </a>
-</article><article class="card" data-tags="Featured New_York">
+</article><article class="card" data-tags="Featured NYC">
 <a class="cardlink" href="https://www.nytimes.com/2018/11/16/nyregion/metropolitan-opera-house-ushers.html" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/the-met-reinvents-itself-yet-the-ushers-remain-the-same.jpg" alt="" loading="lazy"><span class="ol"><img class="wm wm-white" style="height:17px" src="assets/logos/The_New_York_Times.svg" alt="The New York Times" loading="lazy"></span></div>
 <div class="meta meta-slim"><span class="yr">Nov 2018</span></div>
 <h3 class="hed">The Met Reinvents Itself, Yet the Ushers Remain The Same</h3>
 <p class="dek"></p>
 </a>
-</article><article class="card" data-tags="Featured Health New_York">
+</article><article class="card" data-tags="Featured Health NYC">
 <a class="cardlink" href="https://www.nytimes.com/2018/07/11/nyregion/organ-donation-is-desperate-in-new-york.html" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/new-york-has-world-class-hospitals-why-is-it-so-bad-for-peop.jpg" alt="" loading="lazy"><span class="ol"><img class="wm wm-white" style="height:17px" src="assets/logos/The_New_York_Times.svg" alt="The New York Times" loading="lazy"></span></div>
 <div class="meta meta-slim"><span class="yr">Jul 2018</span></div>
@@ -663,7 +670,7 @@ footer{margin-top:50px;border-top:1px solid #dcdad4;padding-top:14px;color:#999;
 <h3 class="hed">Diabetes saps health and wealth from China&#x27;s rise</h3>
 <p class="dek">Rapid economic change in China is propelling a wave of diabetes that health professionals and the public and are only beginning to wake up to. Other authors</p>
 </a>
-</article><article class="card" data-tags="Featured New_York">
+</article><article class="card" data-tags="Featured NYC">
 <a class="cardlink" href="https://doi.org/10.1016/s0140-6736(12)60879-4" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/lancetpick-redefining-public-health-in-new-york-city--fx1.jpg" alt="" loading="lazy"><span class="ol"><span class="wm-type" style="font-family:Georgia,serif;font-weight:700;letter-spacing:.05em;color:#fff;">THE LANCET</span></span></div>
 <div class="meta meta-slim"><span class="yr">May 2012</span></div>

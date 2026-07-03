@@ -57,11 +57,18 @@ body{margin:0;background:#fff;color:#1a1a1a;font:16px/1.55 -apple-system,system-
 .cform button:hover{background:#a32218;}
 footer{margin-top:50px;border-top:1px solid #dcdad4;padding-top:14px;color:#999;font-size:12px;}
 @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:700px){
+.nav{flex-direction:column;align-items:flex-start;gap:10px;padding:18px 0 12px;}
+.nav nav{gap:0;width:100%;justify-content:space-between;}
+.nav a{font-size:11.5px;letter-spacing:.05em;}
+.chips{gap:2px 0;justify-content:space-between;}
+.chip{font-size:12.5px;padding:4px 0;}
+}
 @media(max-width:600px){.grid{grid-template-columns:1fr;}.wrap{padding:0 18px 40px;}}
 </style></head><body>
 <div class="wrap">
 <div class="nav"><a class="brand" href="index.html">TED ALCORN</a><nav><a href="index.html">Journalism</a><a class=on href="data.html">Data</a><a href="teaching.html">Teaching</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></div>
-<div class="prose"><h1>Data</h1><p>Interactive data projects, reported, built, and maintained by hand.</p></div><div class="grid"><article class="card">
+<div class="prose"><h1>Data</h1><p>Interactive data projects.</p></div><div class="grid"><article class="card">
 <a class="cardlink" href="https://tedalcorn.github.io/nyt" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/data-below-the-fold.jpg" alt="" loading="lazy"></div>
 <h3 class="hed">Below the Fold</h3>
@@ -89,7 +96,7 @@ footer{margin-top:50px;border-top:1px solid #dcdad4;padding-top:14px;color:#999;
 <a class="cardlink" href="https://tedalcorn.github.io/el-puente-archive/" target="_blank" rel="noopener">
 <div class="imgwrap"><img class="art" src="assets/art/data-el-puente.jpg" alt="" loading="lazy"></div>
 <h3 class="hed">El Puente Archive</h3>
-<p class="dek">A village newspaper, saved: 264 issues and 5,262 articles of El Puente de Galisteo (1997–2024), digitized, indexed, and searchable.</p>
+<p class="dek">Nearly 30 years of a village newspaper, El Puente de Galisteo, digitized, indexed, and searchable.</p>
 </a>
 </article><article class="card">
 <a class="cardlink" href="https://tedalcorn.github.io/NYSOTS/" target="_blank" rel="noopener">
