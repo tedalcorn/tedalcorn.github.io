@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tedalcorn.org/sitemap.xml
