@@ -11,7 +11,7 @@
 <meta property="og:image" content="https://tedalcorn.org/assets/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@TedAlcorn">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Ted Alcorn", "url": "https://tedalcorn.org/", "jobTitle": "Deputy Director of Policy", "worksFor": {"@type": "Organization", "name": "Office of the Governor of New York", "url": "https://www.governor.ny.gov"}, "sameAs": ["https://x.com/TedAlcorn", "https://bsky.app/profile/tedalcorn.bsky.social", "https://muckrack.com/ted-alcorn", "https://www.nytimes.com/by/ted-alcorn", "https://wagner.nyu.edu/community/faculty/ted-alcorn", "https://www.publichealth.columbia.edu/profile/ted-alcorn-mhs"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://tedalcorn.org/#website", "name": "Ted Alcorn", "url": "https://tedalcorn.org/", "publisher": {"@id": "https://tedalcorn.org/#person"}}, {"@type": "Person", "@id": "https://tedalcorn.org/#person", "name": "Ted Alcorn", "url": "https://tedalcorn.org/", "image": "https://tedalcorn.org/assets/og-image.jpg", "description": "Ted Alcorn is Deputy Director of Policy in the Office of the Governor of New York, teaches at Columbia and NYU, and previously reported on health and justice for The New York Times and other publications.", "jobTitle": "Deputy Director of Policy", "worksFor": {"@type": "Organization", "name": "Office of the Governor of New York", "url": "https://www.governor.ny.gov"}, "affiliation": [{"@type": "CollegeOrUniversity", "name": "Columbia University Mailman School of Public Health"}, {"@type": "CollegeOrUniversity", "name": "NYU Wagner School of Public Service"}], "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Johns Hopkins Bloomberg School of Public Health"}, {"@type": "CollegeOrUniversity", "name": "Johns Hopkins School of Advanced International Studies"}], "sameAs": ["https://x.com/TedAlcorn", "https://bsky.app/profile/tedalcorn.bsky.social", "https://muckrack.com/ted-alcorn", "https://www.nytimes.com/by/ted-alcorn", "https://wagner.nyu.edu/community/faculty/ted-alcorn", "https://www.publichealth.columbia.edu/profile/ted-alcorn-mhs"]}, {"@type": "WebPage", "@id": "https://tedalcorn.org/data.html#page", "url": "https://tedalcorn.org/data.html", "name": "Ted Alcorn \u2014 Data projects", "isPartOf": {"@id": "https://tedalcorn.org/#website"}, "about": {"@id": "https://tedalcorn.org/#person"}}]}</script>
 <style>
 *{box-sizing:border-box}
 body{margin:0;background:#fff;color:#1a1a1a;font:16px/1.55 -apple-system,system-ui,'Helvetica Neue',sans-serif;}
@@ -55,6 +55,7 @@ body{margin:0;background:#fff;color:#1a1a1a;font:16px/1.55 -apple-system,system-
 .cform input,.cform textarea{font:inherit;padding:9px 11px;border:1px solid #ccc;border-radius:2px;}
 .cform button{font:inherit;font-weight:700;padding:9px 0;background:#1a1a1a;color:#fff;border:none;border-radius:2px;cursor:pointer;max-width:120px;}
 .cform button:hover{background:#a32218;}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;}
 footer{margin-top:50px;border-top:1px solid #dcdad4;padding-top:14px;color:#999;font-size:12px;}
 @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr);}}
 @media(max-width:700px){
@@ -69,38 +70,38 @@ footer{margin-top:50px;border-top:1px solid #dcdad4;padding-top:14px;color:#999;
 <div class="wrap">
 <div class="nav"><a class="brand" href="/">TED ALCORN</a><nav><a href="/">About</a><a href="journalism.html">Journalism</a><a class=on href="data.html">Data</a><a href="teaching.html">Teaching</a><a href="contact.html">Contact</a></nav></div>
 <div class="prose"><h1>Data</h1><p>Interactive data projects.</p></div><div class="grid"><article class="card">
-<a class="cardlink" href="https://tedalcorn.github.io/nyt" target="_blank" rel="noopener">
-<div class="imgwrap"><img class="art" src="assets/art/data-below-the-fold.jpg" alt="" loading="lazy"></div>
+<a class="cardlink" href="https://tedalcorn.org/nyt/" target="_blank" rel="noopener">
+<div class="imgwrap"><img class="art" src="assets/art/data-below-the-fold.jpg" alt="Screenshot of Below the Fold" loading="lazy"></div>
 <h3 class="hed">Below the Fold</h3>
 <p class="dek">What The New York Times covers — every story catalogued and measured, updated nightly.</p>
 </a>
 </article><article class="card">
-<a class="cardlink" href="https://tedalcorn.github.io/the-deadliest-mile/NM/" target="_blank" rel="noopener">
-<div class="imgwrap"><img class="art" src="assets/art/data-deadliest-mile.jpg" alt="" loading="lazy"></div>
+<a class="cardlink" href="https://tedalcorn.org/the-deadliest-mile/NM/" target="_blank" rel="noopener">
+<div class="imgwrap"><img class="art" src="assets/art/data-deadliest-mile.jpg" alt="Screenshot of The Deadliest Mile" loading="lazy"></div>
 <h3 class="hed">The Deadliest Mile</h3>
 <p class="dek">The risk of dying on every stretch of American road, built from federal crash records. All 50 states.</p>
 </a>
 </article><article class="card">
-<a class="cardlink" href="https://tedalcorn.github.io/nyc-mmr/" target="_blank" rel="noopener">
-<div class="imgwrap"><img class="art" src="assets/art/data-nyc-pulse.jpg" alt="" loading="lazy"></div>
+<a class="cardlink" href="https://tedalcorn.org/nyc-mmr/" target="_blank" rel="noopener">
+<div class="imgwrap"><img class="art" src="assets/art/data-nyc-pulse.jpg" alt="Screenshot of NYC Pulse" loading="lazy"></div>
 <h3 class="hed">NYC Pulse</h3>
 <p class="dek">Three decades of the Mayor's Management Report — every metric New York City keeps on itself, explorable.</p>
 </a>
 </article><article class="card">
-<a class="cardlink" href="https://tedalcorn.github.io/nyc-shootings/" target="_blank" rel="noopener">
-<div class="imgwrap"><img class="art" src="assets/art/data-nyc-shootings.jpg" alt="" loading="lazy"></div>
+<a class="cardlink" href="https://tedalcorn.org/nyc-shootings/" target="_blank" rel="noopener">
+<div class="imgwrap"><img class="art" src="assets/art/data-nyc-shootings.jpg" alt="Screenshot of NYC Shootings" loading="lazy"></div>
 <h3 class="hed">NYC Shootings</h3>
 <p class="dek">Every shooting in New York City, mapped over time.</p>
 </a>
 </article><article class="card">
-<a class="cardlink" href="https://tedalcorn.github.io/el-puente-archive/" target="_blank" rel="noopener">
-<div class="imgwrap"><img class="art" src="assets/art/data-el-puente.jpg" alt="" loading="lazy"></div>
+<a class="cardlink" href="https://tedalcorn.org/el-puente-archive/" target="_blank" rel="noopener">
+<div class="imgwrap"><img class="art" src="assets/art/data-el-puente.jpg" alt="Screenshot of El Puente Archive" loading="lazy"></div>
 <h3 class="hed">El Puente Archive</h3>
 <p class="dek">Nearly 30 years of a village newspaper, El Puente de Galisteo, digitized, indexed, and searchable.</p>
 </a>
 </article><article class="card">
-<a class="cardlink" href="https://tedalcorn.github.io/NYSOTS/" target="_blank" rel="noopener">
-<div class="imgwrap"><img class="art" src="assets/art/data-nysots.jpg" alt="" loading="lazy"></div>
+<a class="cardlink" href="https://tedalcorn.org/NYSOTS/" target="_blank" rel="noopener">
+<div class="imgwrap"><img class="art" src="assets/art/data-nysots.jpg" alt="Screenshot of New York State of the State" loading="lazy"></div>
 <h3 class="hed">New York State of the State</h3>
 <p class="dek">Every promise in the New York governor's State of the State addresses, tracked.</p>
 </a>
